@@ -1,4 +1,7 @@
-const routeFactory = {};
+const routeFactory = {
+  category: (addr) => `${addr}/api/userAccess/category`,
+  transaction: (addr) => `${addr}/api/userAccess/transaction`,
+};
 
 function handleAPIErr(err) {
   const customCode = getCustomCode(err);
