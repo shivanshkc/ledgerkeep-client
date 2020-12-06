@@ -1,0 +1,27 @@
+{
+  "name": "ledgerkeep-client",
+  "version": "3.2.0",
+  "description": "Official Client Library for Ledgerkeep.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "prettier --write .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivanshkc/ledgerkeep-client.git"
+  },
+  "keywords": [
+    "ledgerkeep",
+    "client"
+  ],
+  "author": "Shivansh Kuchchal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivanshkc/ledgerkeep-client/issues"
+  },
+  "homepage": "https://github.com/shivanshkc/ledgerkeep-client#readme",
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
