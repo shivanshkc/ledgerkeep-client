@@ -3,27 +3,27 @@ class Ledgerkeep {
     this.__addr = addr;
   }
 
-  async getCategoryCount() {}
+  async getCategoryCount(token) {}
 
-  async putCategory() {}
+  async putCategory(token, categoryName) {}
 
-  async delCategory() {}
+  async delCategory(token, categoryName) {}
 
-  async getAllCategories() {}
+  async getAllCategories(token, sortBy) {}
 
-  async getTransactionCount() {}
+  async getTransactionCount(token, queries) {}
 
-  async getTransactionSum() {}
+  async getTransactionSum(token, queries) {}
 
-  async getTransactionByID() {}
+  async getTransactionByID(token, txID) {}
 
-  async patchTransactionByID() {}
+  async patchTransactionByID(token, txID, updates) {}
 
-  async delTransactionByID() {}
+  async delTransactionByID(token, txID) {}
 
-  async getAllTransactions() {}
+  async getAllTransactions(token, queries) {}
 
-  async postTransaction() {}
+  async postTransaction(token, txData) {}
 }
 
 module.exports = Ledgerkeep;
