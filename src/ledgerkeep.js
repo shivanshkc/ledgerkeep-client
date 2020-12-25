@@ -62,8 +62,34 @@ class Ledgerkeep {
     }
   }
 
+  async getTransactionCountByInterval(token, queries) {
+    const url = `${routeFactory.transaction(this.__addr)}/countByInterval`;
+    try {
+      const response = await axios.get(url, {
+        headers: { authorization: token },
+        params: queries,
+      });
+      return response.data || response;
+    } catch (err) {
+      handleAPIErr(err);
+    }
+  }
+
   async getTransactionSum(token, queries) {
     const url = `${routeFactory.transaction(this.__addr)}/sum`;
+    try {
+      const response = await axios.get(url, {
+        headers: { authorization: token },
+        params: queries,
+      });
+      return response.data || response;
+    } catch (err) {
+      handleAPIErr(err);
+    }
+  }
+
+  async getTransactionSumByInterval(token, queries) {
+    const url = `${routeFactory.transaction(this.__addr)}/sumByInterval`;
     try {
       const response = await axios.get(url, {
         headers: { authorization: token },
